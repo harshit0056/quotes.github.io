@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+}
+body{
+    background-image: url(photos/1.jpeg);
+    background-size: cover;
+}
+#btn{
+    background-color: #FFD93D;
+    font-weight: 900;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+#btn:hover{
+    background: white;
+    cursor: pointer;
+}
+#quote{
+    position: absolute;
+    height: 60vh;
+    max-height: max-content;
+    width: 50vw;
+    border: 2px solid white;
+    top:20% ;
+    left:25% ;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+    z-index: 0;
+}
+#box2{
+    border: 2px solid rgb(8, 8, 8);
+    position: relative;
+    top: 7%;
+    left: -11%;
+    height: 80%;
+    width: 120%;
+    background-color: #5584AC;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+    z-index: 0;
+    max-height: fit-content;
+}
+#author{
+    position: relative;
+    background-color: #95D1CC;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    max-height: fit-content;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quote generator</title>
+    <link rel="stylesheet" href="project1.css" >
+</head>
+<body>
+    <button id="btn">GET QUOTE</button>
+    <div id="quote">
+        <div id="box2"><div id="innerquote" style="font-size: 200%; padding: 5% 5% 5%; position: relative; background-color: #FAFFAF; border-radius: 10px;" ></div></div>
+    <center><span id="author"></span></center>
+    </div>
+    
+    <script>let quote = document.getElementById("innerquote");
+        let author = document.getElementById("author");
+        let btn = document.getElementById("btn");
+        
+        const url = "http://api.quotable.io/random";
+        
+        let getquote = () => {
+            fetch(url).then(data => data.json()).then((item) =>{
+                quote.innerText= item.content;
+                console.log(item.author);
+                author.innerText = item.author;
+            });
+        };
+        
+        window.addEventListener("load",getquote);
+        btn.addEventListener("click",getquote);</script>
+</body>
+</html>
